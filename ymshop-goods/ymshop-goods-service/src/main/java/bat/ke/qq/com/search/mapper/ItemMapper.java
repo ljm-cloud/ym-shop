@@ -1,0 +1,19 @@
+package bat.ke.qq.com.search.mapper;
+
+import bat.ke.qq.com.manager.dto.front.RushBuyItem;
+import bat.ke.qq.com.manager.dto.front.SearchItem;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+public interface ItemMapper {
+
+    List<SearchItem> getItemList();
+
+    SearchItem getItemById(@Param("id") Long id);
+
+    List<RushBuyItem> getRushBuyItemList();
+
+    RushBuyItem getRushBuyItem(@Param("promId") Long promId);
+
+}

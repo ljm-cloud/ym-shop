@@ -1,0 +1,7 @@
+.idea/
+target/
+*.iml
+*.bak
+*.log
+tomcat/
+ym-shop-front/node_modules
